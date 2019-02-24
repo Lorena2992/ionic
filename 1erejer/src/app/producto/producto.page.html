@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-button href="/home">
+            <ion-icon name="arrow-round-back"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-title>Productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-menu-toggle auto-hide="false">
+      <ion-item button>
+        <ion-icon slot="start" name='home'></ion-icon>
+        <ion-label>
+          Home
+        </ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  </ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="../assets/img/prueba1.jpeg"></ion-img>
+      <ion-card-subtitle>24 Febrero 2019</ion-card-subtitle>
+      <ion-card-title>La psicodelia</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      <ion-icon name="checkmark-circle"></ion-icon>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-chip>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-label color="secondary">Secondary Label</ion-label>
+  </ion-chip>
+
+  <ion-chip color="secondary">
+    <ion-label color="dark">Secondary w/ Dark label</ion-label>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-icon name="pin"></ion-icon>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-icon name="heart" color="dark"></ion-icon>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-label>Button Chip</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-icon name="pin" color="primary"></ion-icon>
+    <ion-label>Icon Chip</ion-label>
+    <ion-icon name="close"></ion-icon>
+  </ion-chip>
+
+  <ion-chip>
+    <ion-avatar>
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>Avatar Chip</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime display-format="MM/YYYY" picker-format="MMMM YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-toolbar color="success">
+      <ion-title>
+        The Title
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="doSomething()">
+          <ion-icon slot="icon-only" name="add-circle"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+</ion-content>
