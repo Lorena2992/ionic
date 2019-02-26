@@ -34,6 +34,16 @@ const routes: Routes = [
           }
         ]
       },
+
+      {
+        path: 'otros',
+        children: [
+          {
+            path: '',
+            loadChildren: '../otros/otros.module#OtrosPageModule'
+          }
+        ]
+      },
       {
         path: '',
         redirectTo: '/tabs/inicio',
