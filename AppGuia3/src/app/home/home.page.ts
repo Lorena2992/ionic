@@ -36,10 +36,17 @@ logForm() {
 
 tipodato:any;
 resultdato:any;
-obtenertipodato(){ 
 
+obtenertipodato(){
+  if(typeof(this.tipodato) ==="number"){
+    this.resultdato = "number";
 
-  this.resultdato = (typeof(this.tipodato))
+  }
+  else if (typeof(this.tipodato==="string")){
+    this.resultdato = "string";
+  }
+
+ // this.resultdato = (typeof(this.tipodato));
 }
 
 
